@@ -8,8 +8,7 @@ on:
         required: true
         type: choice
         options:
-          - shop-1
-          - shop-2
+          - ${{ fromJson('["shop1"]') }}
 
 jobs:
   triage:
