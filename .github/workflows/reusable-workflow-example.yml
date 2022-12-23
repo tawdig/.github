@@ -8,7 +8,7 @@ on:
         required: true
         type: choice
         options:
-          - ${{ fromJson('["shop1"]') }}
+          - ${{ secrets.SHOPS }}
 
 jobs:
   triage:
