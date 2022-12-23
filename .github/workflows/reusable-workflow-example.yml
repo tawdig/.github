@@ -7,8 +7,7 @@ on:
         description: store to deploy
         required: true
         type: choice
-        options:
-          - ${{ secrets.SHOPS }}
+        options: ${{ secrets.SHOPS }}
 
 jobs:
   triage:
