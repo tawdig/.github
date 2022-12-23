@@ -1,7 +1,7 @@
 name: Reusable workflow example
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       SHOP:
         description: store to deploy
@@ -9,9 +9,6 @@ on:
         type: choice
         options:
           ${{ fromJson('["shop1", "shop2"]') }}
-    secrets:
-      token:
-        required: true
 
 jobs:
   triage:
