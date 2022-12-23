@@ -7,7 +7,7 @@ on:
         description: store to deploy
         required: true
         type: choice
-        options: ${{ secrets.SHOPS }}
+        options: ${{ fromJson('["shop1", "shop2"]') }}
 
 jobs:
   triage:
